@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Fourier Series Visualizer</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>Fourier Series Visualizer</h1>
+    <p class="subtitle">Fourier series decomposition, sine/cosine coefficients, and audio synthesis</p>
+  </header>
+
+  <main>
+    <section class="controls">
+      <waveform-picker class="control-group"></waveform-picker>
+      <harmonics-slider class="control-group"></harmonics-slider>
+      <frequency-slider class="control-group"></frequency-slider>
+      <audio-controls class="control-group buttons-row"></audio-controls>
+      <wav-export-panel class="control-group buttons-row"></wav-export-panel>
+      <mute-solo-reset class="control-group"></mute-solo-reset>
+    </section>
+
+    <section class="visuals">
+      <waveform-drawer class="canvas-box"></waveform-drawer>
+      <waveform-reconstruction class="canvas-box"></waveform-reconstruction>
+      <coefficients-panel class="canvas-box"></coefficients-panel>
+      <magnitude-phase-panel class="canvas-box"></magnitude-phase-panel>
+      <code-export-panel class="canvas-box"></code-export-panel>
+    </section>
+  </main>
+
+  <script type="module" src="js/app.js"></script>
+</body>
+</html>
